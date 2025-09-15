@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        /* Basic styling to center the menu */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            min-height: 100vh;
+        }
+        .menu-container {
+            max-width: 800px; /* Adjust the max width as needed */
+            width: 100%;
+        }
+        /* Make the image responsive */
+        img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-container">
+
+        <img src="menu image.jpg" alt="Restaurant Menu" usemap="#menu-map">
+
+        <map name="menu-map">
+            <area 
+                shape="rect" 
+                coords="55, 610, 1025, 835" 
+                href="https://carte30.netlify.app" 
+                alt="Japanese Menu"
+                target="_blank">
+        </map>
+
+    </div>
+
+</body>
+</html>
