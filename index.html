@@ -5,24 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Menu</title>
     <style>
-        /* Basic styling to center the menu */
+        /* Basic styling for vertical fit */
         body {
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #f0f0f0;
-            min-height: 100vh;
+            background-color: #2c2c2c; /* Darker background for better viewing */
+            width: 100vw;
+            height: 100vh; /* Make body fill the viewport height */
+            overflow: hidden; /* Hide scrollbars */
         }
         .menu-container {
-            max-width: 800px; /* Adjust the max width as needed */
+            height: 100%;
             width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        /* Make the image responsive */
+        /* Make the image fit the screen vertically */
         img {
-            width: 100%;
-            height: auto;
+            height: 100%; /* Fit to container height */
+            width: auto;   /* Adjust width automatically */
+            max-width: 100%; /* Ensure it doesn't overflow on wide screens */
         }
     </style>
 </head>
@@ -35,7 +41,7 @@
         <map name="menu-map">
             <area 
                 shape="rect" 
-                coords="55, 610, 1025, 835" 
+                coords="540, 720, 1025, 835" 
                 href="https://carte30.netlify.app" 
                 alt="Japanese Menu"
                 target="_blank">
